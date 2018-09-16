@@ -1,5 +1,8 @@
+from collections import Counter
+
+
 def compress(seq):
-    result = {}
+    result = Counter()
     for item in seq:
-        result[item] = result.setdefault(item, 0) + 1
+        result[item] += 1
     return result.items()

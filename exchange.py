@@ -7,6 +7,3 @@ def exchange_money(n):
                     if n == ten*10 + five*5 + two*2 + one:
                         amount += 1
     return amount
-
-
-
